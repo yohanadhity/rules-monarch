@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rules - Monarch State Roleplay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #071107, #0f1f0f 60%, #0b1a0b);
+      color: #e0f5e0;
+      overflow-x: hidden;
+    }
+
+    /* === HEADER === */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at center, rgba(122,255,122,0.1), transparent 70%);
+      z-index: 0;
+    }
+
+    header h1 {
+      color: #7aff7a;
+      font-size: 44px;
+      margin: 25px 0 10px;
+      text-shadow: 0 0 15px rgba(122,255,122,0.4);
+      animation: glow 3s ease-in-out infinite alternate;
+      position: relative;
+      z-index: 1;
+    }
+
+    header p {
+      color: #cceccc;
+      margin-top: 5px;
+      font-size: 18px;
+      z-index: 1;
+      position: relative;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(122,255,122,0.3); }
+      to { text-shadow: 0 0 25px rgba(122,255,122,0.7); }
+    }
+
+    /* === NAVBAR === */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #102910;
+      padding: 14px 0;
+      gap: 30px;
+      border-top: 1px solid rgba(122,255,122,0.2);
+      border-bottom: 1px solid rgba(122,255,122,0.2);
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #b0f5b0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s, transform 0.3s;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background: #7aff7a;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    /* === RULES SECTION === */
+    .rules-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #152f15;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      border: 1px solid rgba(122,255,122,0.2);
+    }
+
+    .rules-container h2 {
+      color: #7aff7a;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px rgba(122,255,122,0.4);
+    }
+
+    .rules-category {
+      margin-bottom: 40px;
+    }
+
+    .rules-category h3 {
+      color: #7aff7a;
+      border-bottom: 2px solid rgba(122,255,122,0.4);
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    details {
+      background-color: rgba(20, 50, 20, 0.4);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    summary {
+      font-weight: 600;
+      color: #7aff7a;
+      font-size: 17px;
+      outline: none;
+    }
+
+    details[open] {
+      background-color: rgba(20, 70, 20, 0.6);
+      box-shadow: 0 0 15px rgba(122,255,122,0.3);
+      transform: scale(1.01);
+    }
+
+    details p, details ul {
+      margin: 10px 0 0 10px;
+      color: #d8f5d8;
+      line-height: 1.6;
+    }
+
+    /* === FOOTER === */
+    .footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+      color: #a7f5a7;
+      background-color: #0f230f;
+      border-top: 1px solid rgba(122,255,122,0.2);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Monarch State Roleplay</h1>
+    <p>Server Rules & Guidelines</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rules.html">Rules</a>
+    <a href="https://discord.gg/monarch-rp" target="_blank">Discord</a>
+    <a href="#">Official Link</a>
+  </nav>
+
+  <div class="rules-container">
+    <h2>List Rules Server</h2>
+
+    <!-- SERVER RULES -->
+    <div class="rules-category">
+      <h3>🟩 Server Rules</h3>
+
+      <details>
+        <summary>General Rules</summary>
+        <p>1. Dilarang menggunakan Cheat, Mod Ilegal, atau Program Pihak Ketiga.</p>
+        <p>2. Wajib menggunakan nama sesuai dengan culture. Cth: Alexander_Bradwey</p>
+        <p>3. Dilarang Spam, Flood, dan Promosi Server lain.</p>
+        <p>4. Menybarkan identitas tanpa izin akan dikenakan punishment.</p>
+        <p>5. Saling menghormati sesama Player dan Admin.</p>
+
+      </details>
+
+      <details>
+        <summary>Break Rules</summary>
+        <p><strong>1. POWERGAMING (PG)</strong></p>
+        <p>Melakukan tindakan yang tidak mungkin bisa dilakukan di dunia nyata.</p>
+        <p><strong>-> Contoh:</strong> Mobil seat 4 dipakai untuk 6 orang.</p>
+        <br>
+        <p><strong>2. METAGAMING (MG)</strong></p>
+        <p>Menggunakan informasi OOC untuk kepentingan pribadi.</p>
+        <p><strong>-> Contoh:</strong> Melihat ID dan melihat nama dari ID pada tab list player, padahal tidak kenal atau belum pernah berkenalan sebelumnya.</p>
+        <br>
+        <p><strong>3. DEATHMATCHING (DM)</strong></p>
+        <p>Melakukan penyerangan / pembunuhan pemain lain tanpa RP yang jelas.</p>
+        <p><strong>-> Contoh:</strong> Menembak orang tanpa RP jelas.</p>
+        <br>
+        <p><strong>4. REVENGE KILL (RK)</strong></p>
+        <p>Melakukan pembalasan / mengungkit kembali kejadian sebelum pingsan.</p>
+        <p><strong>-> Contoh:</strong> Kamu ditembaki kelompok A, kamu kalah. Saat terbangun kamu "Ayo kita serang kelompok A lagi".</p>
+        <br>
+      </details>
+
+      <details>
+        <summary>Account & Character Rules</summary>
+        <p>[Kosongkan untuk isi aturan akun & karakter]</p>
+      </details>
+    </div>
+
+    <!-- GOODSIDE RULES -->
+    <div class="rules-category">
+      <h3>🟦 Goodside Rules</h3>
+
+      <details>
+        <summary>Legal Faction Rules</summary>
+        <p>[Kosongkan untuk isi aturan Legal Faction]</p>
+      </details>
+
+      <details>
+        <summary>Job Rules</summary>
+        <p>[Kosongkan untuk isi aturan pekerjaan]</p>
+      </details>
+
+      <details>
+        <summary>Civilian Behavior Rules</summary>
+        <p>[Kosongkan untuk isi aturan perilaku warga]</p>
+      </details>
+    </div>
+
+    <!-- BADSIDE RULES -->
+    <div class="rules-category">
+      <h3>🟥 Badside Rules</h3>
+
+      <details>
+        <summary>Crime Roleplay Rules</summary>
+        <p>[Kosongkan untuk isi aturan RP kejahatan]</p>
+      </details>
+
+      <details>
+        <summary>Gang Rules</summary>
+        <p>[Kosongkan untuk isi aturan geng / organisasi]</p>
+      </details>
+
+      <details>
+        <summary>Robbery & Kidnapping Rules</summary>
+        <p>[Kosongkan untuk isi aturan perampokan & penculikan]</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Monarch State Roleplay | All Rights Reserved
+  </div>
+</body>
+</html>
